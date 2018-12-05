@@ -1,0 +1,5 @@
+[run]
+include = parkoongram/*
+omit = *migrations*, *tests*
+plugins =
+    django_coverage_plugin
