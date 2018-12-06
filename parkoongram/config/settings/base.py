@@ -70,6 +70,8 @@ DJANGO_APPS = [
     # 'django.contrib.humanize', # Handy template tags
     'django.contrib.admin',
 ]
+
+# 인터넷에서 찾아서 별도로 설치하는 앱들
 THIRD_PARTY_APPS = [
     'crispy_forms',
     'allauth',
@@ -77,8 +79,11 @@ THIRD_PARTY_APPS = [
     'allauth.socialaccount',
     'rest_framework',
 ]
+
+# 우리가 생성한 앱
 LOCAL_APPS = [
     'parkoongram.users.apps.UsersAppConfig',
+    'parkoongram.images.apps.ImagesConfig'
     # Your stuff: custom apps go here
 ]
 # https://docs.djangoproject.com/en/dev/ref/settings/#installed-apps
