@@ -39,8 +39,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
 
 DATABASES = {
-    'default': env.db('DATABASE_URL', default='postgres://localhost/parkoongram'),
+    'default': env.db('DATABASE_URL', default='postgres://postgres:q1w2e3r4t5^@localhost:5432/parkoongram'),
 }
+# DATABASES = {
+#     'default': env.db('DATABASE_URL', default='postgres:///parkoongram'),
+# }
+
+# postgres://postgres:q1w2e3r4t5^@localhost:5432/parkoongram
+# postgres://유저이름:비밀번호@호스트:포트/디비이름
+# 서버를 켜야하지 않나?
+
 DATABASES['default']['ATOMIC_REQUESTS'] = True
 
 # URLS
